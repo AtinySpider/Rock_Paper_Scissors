@@ -16,25 +16,20 @@
 </head>
 
 <body>
+		<button onclick="playRound()">playRound</button>
 	<script>
 		function playRound() {
 
-			function computerPlay() {
-				let choiceArray = ["Rock", "Paper", "Scissors"];
-				let choice = choiceArray[Math.floor(Math.random() * choiceArray.length)];
-				return choice;
-			}
-			let computerChoice = computerPlay();
+			let choiceArray = ["Rock", "Paper", "Scissors"];
+			let computerChoice = choiceArray[Math.floor(Math.random() * choiceArray.length)];
 
-			function humanPlay() {
-				let humanChoice = prompt("Pick Rock, Paper, or Scissors");
-			}
-			let humanChoice = humanPlay();
-
+			let humanChoice = prompt("Pick Rock, Paper, or Scissors");
+humanChoice = humanChoice.toUpperCase();
+alert(humanChoice);
 		}
 
 	</script>
-	<button onclick="playRound(playerChoice)">playRound</button>
+	
 </body>
 
 </html>
