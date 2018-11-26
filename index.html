@@ -16,20 +16,28 @@
 </head>
 
 <body>
-		<button onclick="playRound()">playRound</button>
+	<button onclick="playRound()">playRound</button>
 	<script>
 		function playRound() {
 
-			let choiceArray = ["Rock", "Paper", "Scissors"];
+			let choiceArray = ["ROCK", "PAPER", "SCISSORS"];
 			let computerChoice = choiceArray[Math.floor(Math.random() * choiceArray.length)];
 
 			let humanChoice = prompt("Pick Rock, Paper, or Scissors");
-humanChoice = humanChoice.toUpperCase();
-alert(humanChoice);
+			humanChoice = humanChoice.toUpperCase();
+
+			if (humanChoice != "ROCK" && humanChoice != "PAPER" && humanChoice != "SCISSORS") {
+				alert("Invalid choice. Pick Rock, Paper, or Scissors.")
+			} else {
+
+			}
+
+
+
 		}
 
 	</script>
-	
+
 </body>
 
 </html>
