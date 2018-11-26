@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Title</title>
+	<!-- Dis a comment -->
+	<link rel="stylesheet" href="style.css"> <!-- Connect to a css file -->
+	<meta charset="UTF-8"> <!-- Define the character set used -->
+	<meta name="description" content="Free Web Tutorials"> <!-- Define a description of your web page -->
+	<meta name="keywords" content="HTML, CSS, XML, Javascript"> <!-- Define keywords for search engines -->
+	<meta name="author" content="John Doe"> <!-- Define the author of a page -->
+	<meta http-equiv="refresh" content="30"> <!-- Refresh document every 30 seconds -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- A <meta> viewport element gives the browser instructions on how to control the page's dimensions and scaling. -->
+
+</head>
+
+<body>
+	<script>
+		function playRound() {
+
+			function computerPlay() {
+				let choiceArray = ["Rock", "Paper", "Scissors"];
+				let choice = choiceArray[Math.floor(Math.random() * choiceArray.length)];
+				return choice;
+			}
+			let computerChoice = computerPlay();
+
+			function humanPlay() {
+				let humanChoice = prompt("Pick Rock, Paper, or Scissors");
+			}
+			let humanChoice = humanPlay();
+
+		}
+
+	</script>
+	<button onclick="playRound(playerChoice)">playRound</button>
+</body>
+
+</html>
